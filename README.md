@@ -132,23 +132,23 @@ does not conflict with any of the other property names. The name and type of
 the other properties must be configured exactly as specified here. Note that
 property names are case-sensitive, so the capitalization must match exactly.
 
-| Property Name      | Property Type | Notes                                                                                               |
-| ------------------ | ------------- | --------------------------------------------------------------------------------------------------- |
-| `Name`             | Title         | Currently formatted as a citation, but see issue [#14](https://github.com/dvanoni/notero/issues/14) |
-| `Abstract`         | Text          |                                                                                                     |
-| `Authors`          | Text          |                                                                                                     |
-| `Date`             | Text          |
-| `DOI`              | URL           |                                                                                                     |
-| `Editors`          | Text          |                                                                                                     |
-| `File Path`        | Text          |                                                                                                     |
-| `Full Citation`    | Text          | Format is based on the Zotero setting for **Export → Quick Copy → Item Format**                     |
-| `In-Text Citation` | Text          | Currently APA style, but see issue [#5](https://github.com/dvanoni/notero/issues/5)                 |
-| `Item Type`        | Select        |                                                                                                     |
-| `Tags`             | Multi-select  |                                                                                                     |
-| `Title`            | Text          |                                                                                                     |
-| `URL`              | URL           |                                                                                                     |
-| `Year`             | Number        |                                                                                                     |
-| `Zotero URI`       | URL           |                                                                                                     |
+| Property Name | Property Type | Notes                                                                                               |
+| ------------- | ------------- | --------------------------------------------------------------------------------------------------- |
+| `name`        | Title         | Currently formatted as a citation, but see issue [#14](https://github.com/dvanoni/notero/issues/14) |
+| `abstract`    | Text          |                                                                                                     |
+| `authors`     | Text          |                                                                                                     |
+| `date`        | Text          |
+| `DOI`         | URL           |                                                                                                     |
+| `editors`     | Text          |                                                                                                     |
+| `filepath`    | Text          |                                                                                                     |
+| `citation`    | Text          | Format is based on the Zotero setting for **Export → Quick Copy → Item Format**                     |
+| `it_citation` | Text          | Currently APA style, but see issue [#5](https://github.com/dvanoni/notero/issues/5)                 |
+| `item_type`   | Select        |                                                                                                     |
+| `tags`        | Multi-select  |                                                                                                     |
+| `title`       | Text          |                                                                                                     |
+| `URL`         | URL           |                                                                                                     |
+| `year`        | Number        |                                                                                                     |
+| `URI`         | URL           |                                                                                                     |
 
 Support for additional properties is planned for the future. See issues:
 [#30](https://github.com/dvanoni/notero/issues/30)
