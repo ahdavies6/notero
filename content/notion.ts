@@ -157,12 +157,12 @@ export default class Notion {
 
     const propertyDefinitions: Definition[] = [
       {
-        name: 'Abstract',
+        name: 'abstract',
         type: 'rich_text',
         buildRequest: () => Notion.buildRichText(item.getAbstract()),
       },
       {
-        name: 'Authors',
+        name: 'authors',
         type: 'rich_text',
         buildRequest: () => Notion.buildRichText(item.getAuthors().join('\n')),
       },
@@ -172,18 +172,18 @@ export default class Notion {
         buildRequest: () => item.getDOI(),
       },
       {
-        name: 'Editors',
+        name: 'editors',
         type: 'rich_text',
         buildRequest: () => Notion.buildRichText(item.getEditors().join('\n')),
       },
       {
-        name: 'File Path',
+        name: 'filepath',
         type: 'rich_text',
         buildRequest: async () =>
           Notion.buildRichText(await item.getFilePath()),
       },
       {
-        name: 'Full Citation',
+        name: 'citation',
         type: 'rich_text',
         buildRequest: async () =>
           Notion.buildRichText(
@@ -191,7 +191,7 @@ export default class Notion {
           ),
       },
       {
-        name: 'In-Text Citation',
+        name: 'it_citation',
         type: 'rich_text',
         buildRequest: async () =>
           Notion.buildRichText(
@@ -199,14 +199,14 @@ export default class Notion {
           ),
       },
       {
-        name: 'Item Type',
+        name: 'item_type',
         type: 'select',
         buildRequest: () => ({
           name: item.getItemType(),
         }),
       },
       {
-        name: 'Tags',
+        name: 'tags',
         type: 'multi_select',
         buildRequest: () =>
           item.getTags().map((tag) => ({
@@ -214,7 +214,7 @@ export default class Notion {
           })),
       },
       {
-        name: 'Title',
+        name: 'title',
         type: 'rich_text',
         buildRequest: () => Notion.buildRichText(item.getTitle()),
       },
@@ -224,17 +224,17 @@ export default class Notion {
         buildRequest: () => item.getURL(),
       },
       {
-        name: 'Year',
+        name: 'year',
         type: 'number',
         buildRequest: () => item.getYear(),
       },
       {
-        name: 'Date',
+        name: 'date',
         type: 'rich_text',
         buildRequest: () => Notion.buildRichText(item.getDate()),
       },
       {
-        name: 'Zotero URI',
+        name: 'URI',
         type: 'url',
         buildRequest: () => item.getZoteroURI(),
       },
