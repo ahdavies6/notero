@@ -183,7 +183,7 @@ export default class Notion {
           Notion.buildRichText(await item.getFilePath()),
       },
       {
-        name: 'citation',
+        name: 'bibtex',
         type: 'rich_text',
         buildRequest: async () =>
           Notion.buildRichText(
@@ -191,7 +191,7 @@ export default class Notion {
           ),
       },
       {
-        name: 'it_citation',
+        name: 'citation',
         type: 'rich_text',
         buildRequest: async () =>
           Notion.buildRichText(
@@ -234,7 +234,7 @@ export default class Notion {
         buildRequest: () => Notion.buildRichText(item.getDate()),
       },
       {
-        name: 'URI',
+        name: 'Zotero',
         type: 'url',
         buildRequest: () => item.getZoteroURI(),
       },
